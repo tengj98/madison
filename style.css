@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    font-family: Work Sans;
+    font-size: 1.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+#formadison {
+    width: 30%;
+    padding: 20px 20px 20px 60px;
+    margin-bottom: 40px;
+    height: 100vh;
+    top: 50%;
+    position: -webkit-sticky; 
+    position: sticky;
+    transition: all 0.6s linear;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+#reasons {
+    flex-grow: 3;
+    margin: 10px 20px 10px 10px;
+
+}
+
+
+li {
+    width: auto;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1em 0;
+    font-size: 1.25rem;
+    list-style-type: none;
+    
+}
+
+li:last-child {
+	border-bottom: 0;
+}
+
+li:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 1px #ebebeb;
+  transition: .5s;
+}
+
+@media (max-width: 800px) {
+    #formadison {
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 20px 20px 20px 40px;
+        top: 0;
+        transition: all 0.6s linear;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 30vh;
+    }
+
+    #reasons {
+        width: auto;
+
+    }
+
+}
